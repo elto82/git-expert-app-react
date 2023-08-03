@@ -9,11 +9,16 @@ Esta es una aplicación web desarrollada en React para buscar y mostrar imágene
 - Integración con la API de Giphy para obtener imágenes GIF.
 - Diseño responsive y atractivo.
 
+#
 
-#[URL](https://gits-page-r-e-a-c-t.netlify.app/)
+# [URL](https://gits-page-r-e-a-c-t.netlify.app/)
 https://gits-page-r-e-a-c-t.netlify.app/
-
 ![Alt text](image.png)
+
+
+[GitHubPage](https://elto82.github.io/git-expert-app-react/)
+
+![Alt text](image-1.png)
 
 
 
