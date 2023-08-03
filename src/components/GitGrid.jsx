@@ -1,4 +1,4 @@
-
+import PropTypes from "prop-types";
 import { GifItem } from "./GifItem";
 import { useFetchGits } from "../hooks/useFetchGits";
 
@@ -16,4 +16,9 @@ export const GitGrid = ({ category }) => {
       </div>
     </>
   );
+};
+
+
+GitGrid.propTypes = {
+  category: PropTypes.string.isRequired,
 };
