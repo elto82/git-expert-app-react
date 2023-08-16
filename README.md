@@ -9,8 +9,6 @@ Esta es una aplicación web desarrollada en React para buscar y mostrar imágene
 - Integración con la API de Giphy para obtener imágenes GIF.
 - Diseño responsive y atractivo.
   
-#
-
 # [URL](https://gits-page-r-e-a-c-t.netlify.app/)
 
 https://gits-page-r-e-a-c-t.netlify.app/
@@ -58,38 +56,48 @@ Este proyecto está bajo la Licencia MIT. Consulta el archivo LICENSE para más 
 
 ## Instalaciones:
 
-- npm install --dev jest babel-jest @babel/preset-env @babel/preset-react 
+- npm install --dev jest babel-jest @babel/preset-env @babel/preset-react
 - npm install --dev @testing-library/react @types/jest jest-environment-jsdom
-  
+
 ### Opcional: Si usamos Fetch API en el proyecto:
 
 npm install --dev whatwg-fetch
 
 - Actualizar los scripts del package.json  
- - "scripts": {
+  
+```javaScript
+  "scripts": {
   ...
   "test": "jest --watchAll"
+  ```
 
 ### Crear la configuración de babel babel.config.cjs
 
+```javaScript
 module.exports = {
   presets: [
     ["@babel/preset-env", { targets: { esmodules: true } }],
     ["@babel/preset-react", { runtime: "automatic" }],
   ],
 };
+```
 
 ### Opcional, pero eventualmente necesario, crear Jest config y setup :
 
 jest.config.js
 
+```javaScript
 module.exports = {
-  testEnvironment: "jsdom", // Usar el entorno de prueba jsdom
+  testEnvironment: "jsdom",
+  transformIgnorePatterns: [],
   setupFiles: ["./jest.setup.js"],
 };
+```
 
 jest.setup.js
 
 En caso de necesitar la implementación del FetchAPI
 
-- import "whatwg-fetch"; // Importar here "whatwg-fetch" para el entorno de prueba
+```javaScript
+import "whatwg-fetch"; // Importar here "whatwg-fetch" para el entorno de prueba
+```

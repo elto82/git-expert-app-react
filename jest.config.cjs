@@ -1,4 +1,5 @@
 module.exports = {
-  testEnvironment: "jsdom", // Usar el entorno de prueba jsdom
+  testEnvironment: "jsdom",
+  transformIgnorePatterns: [],
   setupFiles: ["./jest.setup.js"],
 };
